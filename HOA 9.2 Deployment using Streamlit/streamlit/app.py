@@ -7,7 +7,7 @@ import numpy as np
 @st.cache_resource
 def load_model():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(base_dir, "model.keras")
+    model_path = os.path.join(base_dir, "model.h5")
     return tf.keras.models.load_model(model_path)
 
 model = load_model()  # ✅ assign the returned model here
